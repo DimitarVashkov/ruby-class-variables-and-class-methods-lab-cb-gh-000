@@ -30,7 +30,8 @@ class Song
   def Song.genre_count
     result = {}
     @@genres.each do |x|
-      result[x] ||= []
+      result[x] ||= 0
+      result[x] += 1
     end
   end
 
