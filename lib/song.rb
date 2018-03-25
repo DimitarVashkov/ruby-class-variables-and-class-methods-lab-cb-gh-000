@@ -36,4 +36,13 @@ class Song
     result
   end
 
+  def Song.artist_count
+    result = {}
+    @@artists.each do |x|
+      result[x] ||= 0
+      result[x] += 1
+    end
+    result
+  end
+
 end
