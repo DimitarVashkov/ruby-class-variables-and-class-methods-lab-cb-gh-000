@@ -11,4 +11,17 @@ class Song
     @genre = genre
     @@count += 1
   end
+
+  def Song.count
+    @@count
+  end
+
+  def Song.artists
+    @@artists
+  end
+
+  def Song.genres
+    @@genres
+  end
+  
 end
