@@ -27,4 +27,11 @@ class Song
     @@genres.uniq
   end
 
+  def Song.genre_count
+    result = {}
+    @@genres.each do |x|
+      result[x] ||= []
+    end
+  end
+
 end
